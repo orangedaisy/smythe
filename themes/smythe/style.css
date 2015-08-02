@@ -279,7 +279,7 @@ input,
 select,
 textarea {
   color: #303030;
-  font-family: sans-serif;
+  font-family: "Lora", serif;
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
