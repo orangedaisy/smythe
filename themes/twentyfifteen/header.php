@@ -19,6 +19,11 @@
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
 	<?php wp_head(); ?>
+  <style type="text/css">
+    html {
+      background: cornflowerblue;
+    }
+  </style>
 </head>
 
 <body <?php body_class(); ?>>
