@@ -11,9 +11,7 @@
 
 <footer id="colophon" class="site-footer" role="contentinfo">
   <div class="site-info">
-    <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'smythe' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'smythe' ), 'WordPress' ); ?></a>
-    <span class="sep"> | </span>
-    <?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'smythe' ), 'smythe', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+    <p>&copy;<?php echo date('Y'); ?> Cordelia Smythe Murder Mysteries</p>
   </div><!-- .site-info -->
 </footer><!-- #colophon -->
 
