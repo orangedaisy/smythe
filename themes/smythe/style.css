@@ -829,4 +829,12 @@ object {
   padding-bottom: 2.25rem;
   text-align: center; }
 
+.o-paper {
+  background: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(48, 48, 48, 0.25);
+  display: block;
+  position: relative; }
+  .o-paper + .o-paper {
+    margin-top: 2.25rem; }
+
 /*# sourceMappingURL=style.css.map */
