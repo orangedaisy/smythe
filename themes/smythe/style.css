@@ -42,6 +42,55 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+/**
+ * Return the configured layout direction for floats etc.
+ * @return {string} - The direction in left/right format.
+ */
+/**
+ * Return the opposite of the configured layout direction for floats etc.
+ * @return {string} - The direction in left/right format.
+ */
+/**
+ * Set up the layout direction.
+ */
+/**
+ * Enable debugging environment that applies a translucent background to every element on the page.
+ * @param {string} [$color:blue] - The color to be lightened in the debugging environment.
+ */
+/**
+ * Set an element's width and margin-right gutter by ratio.
+ * @param {number} [$ratio:1] - A width relative to its container as a fraction.
+ * @param {string} [$gutter:$elf-gutter] - Specify the gutter width as any unit.
+ */
+/**
+ * Make elements automatically drop down a row when the specified item is reached.
+ * @param {number} [$item:0] - Item to be the last in the row.
+ * @param {string} [$uncycle:0] - Cycle to be reset. Useful in media queries.
+ * @param {string} [$gutter:$elf-gutter] - Specify the gutter width as any unit.
+ */
+/**
+ * Offset elements from one another.
+ * @param {number} [$ratio:0] - Fraction to be used to offset.
+ * @param {boolean} [$column:true] - Are you offsetting a column?
+ * @param {string} [$gutter:$elf-gutter] - Specify the gutter width as any unit.
+ */
+/**
+ * Set an element's width as a fraction.
+ * @param {number} [$ratio:1] - A width relative to its container as a fraction.
+ */
+/**
+ * Useful for source ordering. Shift elements to the left and right with positive and negative integers.
+ * @param {number} [$ratio:0] - Fraction to be used in the shift.
+ * @param {boolean} [$column:true] - Are you shifting a column?
+ * @param {string} [$gutter:$elf-gutter] - Specify the gutter width as any unit.
+ */
+/**
+ * Useful for source ordering. Removes affects applied by shift().
+ */
+/**
+ * Apply this mixin to containing elements in order to add flexbox centering to any element.
+ * @param {string} [$direction:both] - Accepts 'both', 'vertical', or 'horizontal'.
+ */
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
