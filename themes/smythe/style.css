@@ -809,7 +809,8 @@ object {
 # Custom Imports
 --------------------------------------------------------------*/
 .site-header {
-  background: #303030; }
+  background: #303030;
+  margin-bottom: 2.25rem; }
 
 .wordmark {
   color: #b12d2f;
