@@ -1,0 +1,35 @@
+// ----------
+//
+// site-header
+//
+// ----------
+
+.site-header {
+  background: $c-midnight;
+}
+
+.wordmark {
+  color: $c-crimson;
+  font: {
+    family: $f-brand;
+    size: scale(3.375);
+    weight: 400;
+  }
+  margin: 0 auto;
+  padding-top: scale(2.25);
+  text: {
+    align: center;
+    transform: capitalize;
+  }
+}
+
+.tagline {
+  color: $c-silver;
+  font: {
+    size: scale(1.25);
+    weight: 400;
+  }
+  margin: 0 auto;
+  padding-bottom: scale(2.25);
+  text-align: center;
+}

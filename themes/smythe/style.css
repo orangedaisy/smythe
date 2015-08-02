@@ -734,4 +734,28 @@ object {
 .gallery-caption {
   display: block; }
 
+/*--------------------------------------------------------------
+# Custom Imports
+--------------------------------------------------------------*/
+.site-header {
+  background: #303030; }
+
+.wordmark {
+  color: #b12d2f;
+  font-family: "Calligraffitti", cursive;
+  font-size: 3.375rem;
+  font-weight: 400;
+  margin: 0 auto;
+  padding-top: 2.25rem;
+  text-align: center;
+  text-transform: capitalize; }
+
+.tagline {
+  color: #f0f0f0;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 0 auto;
+  padding-bottom: 2.25rem;
+  text-align: center; }
+
 /*# sourceMappingURL=style.css.map */
