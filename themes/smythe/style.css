@@ -285,8 +285,10 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
-p + p {
-  margin-top: 1.5rem; }
+p {
+  margin: 0; }
+  p + p {
+    margin-top: 1.5rem; }
 
 dfn, cite, em, i {
   font-style: italic; }
