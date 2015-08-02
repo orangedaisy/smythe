@@ -21,3 +21,11 @@
 .site-footer:after {
 	@include clearfix-after;
 }
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
