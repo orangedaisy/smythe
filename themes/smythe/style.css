@@ -862,9 +862,31 @@ object {
   width: 90%; }
 
 .c-postcard {
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: 75% auto;
   margin: 0 auto;
   max-width: 67.5em;
-  padding: 2.25rem;
   width: 90%; }
+  .c-postcard__content {
+    background: #f0f0f0;
+    margin-left: 50%;
+    padding: 2.25rem;
+    width: 50%; }
+  .c-postcard__title {
+    line-height: 1.2;
+    margin: 0; }
+    .c-postcard__title a {
+      background-image: linear-gradient(#b12d2f, #b12d2f);
+      background-position: 0 1.6rem;
+      background-repeat: repeat-x;
+      background-size: 2px 2px;
+      color: #303030;
+      text-decoration: none;
+      text-shadow: 1px 0 0 #f0f0f0, -1px 0 0 #f0f0f0, 2px 0 0 #f0f0f0, -2px 0 0 #f0f0f0; }
+      .c-postcard__title a:hover, .c-postcard__title a:focus {
+        color: #6e6e6e; }
+      .c-postcard__title a:active {
+        color: #222222; }
 
 /*# sourceMappingURL=style.css.map */

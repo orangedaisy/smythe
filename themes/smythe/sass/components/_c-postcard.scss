@@ -5,8 +5,49 @@
 // ----------
 
 .c-postcard {
+  background: {
+    position: center left;
+    repeat: no-repeat;
+    size: 75% auto;
+  }
   margin: 0 auto;
   max-width: 67.5em;
-  padding: scale(2.25);
   width: 90%;
+
+  &__content {
+    background: $c-silver;
+    margin-left: 50%;
+    padding: scale(2.25);
+    width: 50%;
+  }
+
+  &__title {
+    line-height: 1.2;
+    margin: 0;
+
+    a {
+      background: {
+        image: linear-gradient($c-crimson,$c-crimson);
+        position: 0 1.6rem;
+        repeat: repeat-x;
+        size: 2px 2px;
+      }
+      color: $c-midnight;
+      text: {
+        decoration: none;
+        shadow:
+          1px 0 0 $c-silver,
+          -1px 0 0 $c-silver,
+          2px 0 0 $c-silver,
+          -2px 0 0 $c-silver;
+      }
+
+      &:hover,&:focus {
+        color: tint($c-midnight,30%);
+      }
+      &:active {
+        color: shade($c-midnight,30%);
+      }
+    }
+  }
 }
