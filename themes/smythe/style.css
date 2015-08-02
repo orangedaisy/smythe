@@ -837,7 +837,15 @@ object {
   text-align: center; }
 
 .site-footer {
-  margin-top: 2.25rem; }
+  background: #f0f0f0;
+  box-shadow: 0 -2px 4px rgba(48, 48, 48, 0.25);
+  margin-top: 2.25rem;
+  padding: 1rem 0; }
+
+.site-info {
+  margin: 0 auto;
+  max-width: 67.5em;
+  width: 90%; }
 
 .o-paper {
   background: #f0f0f0;
