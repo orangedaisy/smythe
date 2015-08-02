@@ -1,0 +1,7 @@
+# sass stuff
+**/.sass-cache/
+**/*.css.map
+**/*.scss
+
+# vim
+**/*.swp
