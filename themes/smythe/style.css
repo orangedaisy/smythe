@@ -830,6 +830,9 @@ object {
   padding-bottom: 2.25rem;
   text-align: center; }
 
+.site-footer {
+  margin-top: 2.25rem; }
+
 .o-paper {
   background: #f0f0f0;
   box-shadow: 0 2px 4px rgba(48, 48, 48, 0.25);
