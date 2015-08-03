@@ -19,11 +19,11 @@
     margin-left: 50%;
     padding: scale(2.25);
     width: 50%;
-  }
+  }// end content
 
   &__title {
     line-height: 1.2;
-    margin: 0;
+    margin: 0 0 scale(.5);
 
     a {
       background: {
@@ -49,5 +49,9 @@
         color: shade($c-midnight,30%);
       }
     }
+  }// end title
+  
+  .entry-meta {
+    font-style: italic;
   }
-}
+}// end postcard
