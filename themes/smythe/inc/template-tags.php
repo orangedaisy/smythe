@@ -123,7 +123,6 @@ function smythe_entry_footer() {
 		echo '</span>';
 	}
 
-	edit_post_link( esc_html__( 'Edit', 'smythe' ), '<span class="edit-link">', '</span>' );
 }
 endif;
 
