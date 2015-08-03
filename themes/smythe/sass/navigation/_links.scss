@@ -1,19 +1,25 @@
 a {
-	color: $color__link;
+  background: {
+    image: linear-gradient($c-crimson,$c-crimson);
+    position: 0 1.1rem;
+    repeat: repeat-x;
+    size: 1px 1px;
+  }
+  color: $c-midnight;
+  text: {
+    decoration: none;
+    shadow:
+    1px 0 0 $c-silver,
+    -1px 0 0 $c-silver;
+  }
 
-	&:visited {
-		color: $color__link-visited;
-	}
-	&:hover,
-	&:focus,
-	&:active {
-		color: $color__link-hover;
-	}
-	&:focus {
-		outline: thin dotted;
-	}
-	&:hover,
-	&:active {
-		outline: 0;
-	}
+  &:hover,&:focus {
+    color: tint($c-midnight,30%);
+  }
+  &:active {
+    color: shade($c-midnight,30%);
+  }
+  &:visited {
+    color: $c-midnight;
+  }
 }

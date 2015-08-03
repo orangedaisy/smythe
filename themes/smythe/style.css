@@ -456,15 +456,19 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
+  background-image: linear-gradient(#b12d2f, #b12d2f);
+  background-position: 0 1.1rem;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  color: #303030;
+  text-decoration: none;
+  text-shadow: 1px 0 0 #f0f0f0, -1px 0 0 #f0f0f0; }
+  a:hover, a:focus {
+    color: #6e6e6e; }
+  a:active {
+    color: #222222; }
   a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
+    color: #303030; }
 
 /*--------------------------------------------------------------
 ## Menus
