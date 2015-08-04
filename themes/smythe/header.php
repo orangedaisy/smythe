@@ -27,7 +27,14 @@
     <h3 class="tagline"><?php bloginfo( 'description' ); ?></h3>
 
 		<nav id="site-navigation" class="site-nav" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'smythe' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+      <!--<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'smythe' ); ?></button>-->
+      <div class="site-nav__wrapper">
+        <div class="site-nav__wrapper--left">
+          <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+        </div>
+        <div class="site-nav__wrapper--right">
+          <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_id' => 'secondary-menu' ) ); ?>
+        </div>
+      </div>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
