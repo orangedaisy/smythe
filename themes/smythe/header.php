@@ -16,6 +16,25 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Calligraffitti%7CLora:400,400italic,700">
 
+<style>
+  /* get the featured image */
+  <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+
+  /* styles to show a nicely gradient-overlain background image in posts, etc */
+  .single-post .site-main {
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(48,48,48,.75),
+        rgba(48,48,48,.5) 30%,
+        #d8d8d8
+      ),
+      url('<?php echo $thumb['0'];?>');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+</style>
+
 <?php wp_head(); ?>
 </head>
 
