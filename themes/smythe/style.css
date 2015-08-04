@@ -931,11 +931,13 @@ object {
 
 .c-note {
   background: #b12d2f;
-  border-left: 1.5rem solid #9f292a;
+  border-left: 1rem solid #8e2426;
   margin: 0 auto;
   padding: 1.25rem; }
   .c-note--site-notice {
     font-size: 0.85rem;
+    line-height: 1.25;
+    padding: 0.5rem;
     text-align: center; }
   .c-note__contents {
     color: #f0f0f0; }
