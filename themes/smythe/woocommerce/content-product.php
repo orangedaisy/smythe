@@ -44,7 +44,7 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 ?>
 
 <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-<div class="o-paper c-postcard" style="background-image: url('<?php echo $thumb['0'];?>')">
+<li class="o-paper c-postcard" style="background-image: url('<?php echo $thumb['0'];?>')">
 
   <div class="c-postcard__content">
     <?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
