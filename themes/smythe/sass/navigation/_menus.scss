@@ -1,25 +1,49 @@
 .site-nav {
-  @extend %clearfix;
   background: $c-silver;
   box-shadow: 0 2px 4px $c-shadow;
-  padding: scale(1) 0;
 
-  ul {
-    list-style-type: none;
+  &__wrapper {
+    @extend %clearfix;
     margin: 0 auto;
     max-width: 67.5em;
-    padding: 0;
+    padding: scale(1) 0;
     width: 90%;
+
+    &--left {
+      @include column(2/3);
+
+      li {
+        float: left;
+      }
+
+      a:first-child {
+        margin-left: 0;
+      }
+    }
+
+    &--right {
+      @include column(1/3);
+
+      li {
+        float: right;
+      }
+
+      a:last-child {
+        margin-right: 0;
+      }
+    }
   }
 
-  li {
-    float: left;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   a {
     background: {
       image: linear-gradient($c-shadow,$c-shadow);
-      position: 0 1.2rem;
+      position: 0 90%;
       size: 2px 2px;
       repeat: repeat-x;
     }
@@ -46,7 +70,8 @@
   }
 }
 
-.current-menu-item a {
+.current-menu-item a,
+.current_page_item a {
   background-image: linear-gradient($c-crimson,$c-crimson);
 }
 
