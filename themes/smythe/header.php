@@ -39,6 +39,9 @@
 </head>
 
 <body <?php body_class(); ?>>
+  <div class="o-paper c-note c-note--site-notice">
+    <p class="c-note__contents">Welcome to the new home for Cordelia Smythe Murder Mysteries! Please pardon the dust as we continue to improve your browsing experience.</p>
+  </div>
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'smythe' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">

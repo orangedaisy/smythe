@@ -929,4 +929,15 @@ object {
   .c-postcard .entry-meta {
     font-style: italic; }
 
+.c-note {
+  background: #b12d2f;
+  border-left: 1.5rem solid #9f292a;
+  margin: 0 auto;
+  padding: 1.25rem; }
+  .c-note--site-notice {
+    font-size: 0.85rem;
+    text-align: center; }
+  .c-note__contents {
+    color: #f0f0f0; }
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,21 @@
+// ----------
+//
+// c-note
+//
+// ----------
+
+.c-note {
+  background: $c-crimson;
+  border-left: scale(1.5) solid shade($c-crimson,10%);
+  margin: 0 auto;
+  padding: scale(1.25);
+
+  &--site-notice {
+    font-size: scale(.85);
+    text-align: center;
+  }
+
+  &__contents {
+    color: $c-silver;
+  }
+}
