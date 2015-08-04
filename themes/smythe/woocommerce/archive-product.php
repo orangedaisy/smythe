@@ -15,6 +15,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' ); ?>
 
+<main id="main" class="site-main" role="main">
+
 	<?php
 		/**
 		 * woocommerce_before_main_content hook
@@ -22,7 +24,7 @@ get_header( 'shop' ); ?>
 		 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
 		 * @hooked woocommerce_breadcrumb - 20
 		 */
-		do_action( 'woocommerce_before_main_content' );
+		//do_action( 'woocommerce_before_main_content' );
 	?>
 
 		<?php do_action( 'woocommerce_archive_description' ); ?>
@@ -36,7 +38,7 @@ get_header( 'shop' ); ?>
 				 * @hooked woocommerce_result_count - 20
 				 * @hooked woocommerce_catalog_ordering - 30
 				 */
-				do_action( 'woocommerce_before_shop_loop' );
+				//do_action( 'woocommerce_before_shop_loop' );
 			?>
 
 			<?php woocommerce_product_loop_start(); ?>
@@ -74,5 +76,7 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_after_main_content' );
 	?>
+
+</main>
 
 <?php get_footer( 'shop' ); ?>
