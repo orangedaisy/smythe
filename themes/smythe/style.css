@@ -843,8 +843,7 @@ object {
 # Custom Imports
 --------------------------------------------------------------*/
 .site-header {
-  background: #303030;
-  margin-bottom: 2.25rem; }
+  background: #303030; }
 
 .wordmark {
   color: #b12d2f;
@@ -863,6 +862,9 @@ object {
   margin: 0 auto;
   padding-bottom: 2.25rem;
   text-align: center; }
+
+.site-main {
+  padding-top: 2.25rem; }
 
 .site-footer {
   background: #f0f0f0;
