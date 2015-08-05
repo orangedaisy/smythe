@@ -294,7 +294,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Calligraffitti", cursive;
   font-size: 5.063rem;
   font-weight: 400;
-  padding: 5.063rem 0;
+  padding: 3.375rem 0 5.063rem;
   text-align: center;
   text-shadow: 1px 0 1px rgba(48, 48, 48, 0.25), 0 1px 1px rgba(48, 48, 48, 0.25), 2px 1px 1px rgba(48, 48, 48, 0.25), 1px 2px 1px rgba(48, 48, 48, 0.25); }
 
