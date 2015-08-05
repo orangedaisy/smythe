@@ -1,0 +1,10 @@
+// ----------
+//
+// woocommerce overrides
+//
+// ----------
+
+.woocommerce div.product form.cart,
+.woocommerce div.product p.cart {
+  margin-bottom: 0;
+}

@@ -951,4 +951,11 @@ object {
   .c-note__contents {
     color: #f0f0f0; }
 
+.c-mystery-page__cart {
+  margin: 1.5rem auto; }
+
+.woocommerce div.product form.cart,
+.woocommerce div.product p.cart {
+  margin-bottom: 0; }
+
 /*# sourceMappingURL=style.css.map */
