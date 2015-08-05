@@ -5,8 +5,11 @@
 // ----------
 
 // lord forgive me for this awful selector. i hate aggressive vendor styles.
+.woocommerce a.button,
+.woocommerce a.button.alt,
 .woocommerce button.c-button--gray,
-.woocommerce input.button {
+.woocommerce input.button,
+.woocommerce input.button.alt {
   background: tint($c-midnight,20%);
   border-radius: 0;
   box-shadow: 0 2px 4px $c-shadow;

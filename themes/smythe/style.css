@@ -978,20 +978,32 @@ object {
     font-weight: 700;
     min-width: 50px; }
 
+.woocommerce a.button,
+.woocommerce a.button.alt,
 .woocommerce button.c-button--gray,
-.woocommerce input.button {
+.woocommerce input.button,
+.woocommerce input.button.alt {
   background: #595959;
   border-radius: 0;
   box-shadow: 0 2px 4px rgba(48, 48, 48, 0.25);
   color: #f0f0f0; }
-  .woocommerce button.c-button--gray:hover, .woocommerce button.c-button--gray:focus,
+  .woocommerce a.button:hover, .woocommerce a.button:focus,
+  .woocommerce a.button.alt:hover,
+  .woocommerce a.button.alt:focus,
+  .woocommerce button.c-button--gray:hover,
+  .woocommerce button.c-button--gray:focus,
   .woocommerce input.button:hover,
-  .woocommerce input.button:focus {
+  .woocommerce input.button:focus,
+  .woocommerce input.button.alt:hover,
+  .woocommerce input.button.alt:focus {
     background: #6e6e6e;
     box-shadow: 0 4px 8px rgba(48, 48, 48, 0.25);
     color: #f0f0f0; }
+  .woocommerce a.button:active,
+  .woocommerce a.button.alt:active,
   .woocommerce button.c-button--gray:active,
-  .woocommerce input.button:active {
+  .woocommerce input.button:active,
+  .woocommerce input.button.alt:active {
     background: #303030;
     box-shadow: 0 1px 2px rgba(48, 48, 48, 0.25);
     color: #f0f0f0; }
