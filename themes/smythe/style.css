@@ -969,6 +969,15 @@ object {
     .c-note a:active {
       color: silver; }
 
+.product h6 {
+  background: #b12d2f;
+  border-left: 1rem solid #8e2426;
+  color: #f0f0f0;
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin: 0 auto 1.5rem;
+  padding: 0.5rem; }
+
 .c-mystery-page__cart {
   margin: 1.5rem auto; }
   .c-mystery-page__cart .qty,

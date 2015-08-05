@@ -46,3 +46,15 @@
     }
   }
 }
+
+.product h6 {
+  background: $c-crimson;
+  border-left: scale(1) solid shade($c-crimson,20%);
+  color: $c-silver;
+  font: {
+    size: scale(.85);
+    weight: 400;
+  }
+  margin: 0 auto scale(1.5);
+  padding: scale(.5);
+}
