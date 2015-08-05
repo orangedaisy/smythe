@@ -4,7 +4,19 @@
 //
 // ----------
 
-.c-button--gray {
-  background: $c-midnight;
+// lord forgive me for this awful selector. i hate aggressive vendor styles.
+.woocommerce button.c-button--gray {
+  background: tint($c-midnight,20%);
+  border-radius: 0;
   color: $c-silver;
+
+  &:hover,&:focus {
+    background: tint($c-midnight,30%);
+    color: $c-silver;
+  }
+
+  &:active {
+    background: $c-midnight;
+    color: $c-silver;
+  }
 }

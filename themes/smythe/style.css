@@ -963,9 +963,16 @@ object {
     font-weight: 700;
     min-width: 50px; }
 
-.c-button--gray {
-  background: #303030;
+.woocommerce button.c-button--gray {
+  background: #595959;
+  border-radius: 0;
   color: #f0f0f0; }
+  .woocommerce button.c-button--gray:hover, .woocommerce button.c-button--gray:focus {
+    background: #6e6e6e;
+    color: #f0f0f0; }
+  .woocommerce button.c-button--gray:active {
+    background: #303030;
+    color: #f0f0f0; }
 
 .u-row {
   display: block; }
