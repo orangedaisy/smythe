@@ -162,5 +162,20 @@ function so_27975262_product_query( $q ){
   $q->set( 'post_parent', 0 );
 }
 
-// add to cart template?
+// add to cart template
 add_action( 'smythe_add_to_cart', 'woocommerce_template_single_add_to_cart' );
+
+// custom breadcrumbs
+add_filter( 'woocommerce_breadcrumb_home_url', 'smythe_custom_breadcrumb_home_url' );
+function smythe_custom_breadcrumb_home_url() {
+  return '/shop';
+}
+
+add_filter( 'woocommerce_breadcrumb_defaults', 'smythe_change_breadcrumb_home_text' );
+function smythe_change_breadcrumb_home_text( $defaults ) {
+  //change breadcrumb 'home' text => 'mysteries'
+  $defaults[ 'home' ] = 'Mysteries';
+  return $defaults;
+}
+
+add_action( 'smythe_breadcrumbs', 'woocommerce_breadcrumb' );

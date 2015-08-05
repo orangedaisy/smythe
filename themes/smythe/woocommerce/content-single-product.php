@@ -35,6 +35,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class( 'o-paper c-letter' ); ?>>
 
+  <?php do_action( 'smythe_breadcrumbs' ); ?>
+
   <h2 style="margin-top:0;">Mystery Overview</h2>
   <?php the_excerpt(); ?>
 
