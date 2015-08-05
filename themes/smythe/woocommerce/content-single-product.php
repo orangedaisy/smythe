@@ -35,23 +35,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class( 'o-paper c-letter' ); ?>>
 
-  <?php
-    /**
-     * woocommerce_single_product_summary hook
-     *
-     * @hooked woocommerce_template_single_title - 5
-     * @hooked woocommerce_template_single_rating - 10
-     * @hooked woocommerce_template_single_price - 10
-     * @hooked woocommerce_template_single_excerpt - 20
-     * @hooked woocommerce_template_single_add_to_cart - 30
-     * @hooked woocommerce_template_single_meta - 40
-     * @hooked woocommerce_template_single_sharing - 50
-     */
-    //do_action( 'woocommerce_single_product_summary' );
-  ?>
-
   <h2 style="margin-top:0;">Mystery Overview</h2>
   <?php the_excerpt(); ?>
+
+  <?php do_action( 'smythe_add_to_cart' ); ?>
 
   <h2>Character List</h2>
   <?php the_content(); ?>

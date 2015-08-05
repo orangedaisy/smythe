@@ -161,3 +161,6 @@ add_action( 'woocommerce_product_query', 'so_27975262_product_query' );
 function so_27975262_product_query( $q ){
   $q->set( 'post_parent', 0 );
 }
+
+// add to cart template?
+add_action( 'smythe_add_to_cart', 'woocommerce_template_single_add_to_cart' );
