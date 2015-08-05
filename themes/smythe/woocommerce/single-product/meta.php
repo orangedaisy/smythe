@@ -19,7 +19,7 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
 ?>
 <div class="product_meta">
 
-	<?php do_action( 'woocommerce_product_meta_start' ); ?>
+	<?php //do_action( 'woocommerce_product_meta_start' ); ?>
 
 	<?php if ( wc_product_sku_enabled() && ( $product->get_sku() || $product->is_type( 'variable' ) ) ) : ?>
 
@@ -31,6 +31,6 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
 
 	<?php echo $product->get_tags( ', ', '<span class="tagged_as">' . _n( 'Tag:', 'Tags:', $tag_count, 'woocommerce' ) . ' ', '.</span>' ); ?>
 
-	<?php do_action( 'woocommerce_product_meta_end' ); ?>
+	<?php //do_action( 'woocommerce_product_meta_end' ); ?>
 
 </div>
