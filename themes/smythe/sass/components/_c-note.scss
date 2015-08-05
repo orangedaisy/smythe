@@ -7,8 +7,11 @@
 .c-note {
   background: $c-crimson;
   border-left: scale(1) solid shade($c-crimson,20%);
+  color: $c-silver;
   margin: 0 auto;
+  max-width: 67.5em;
   padding: scale(1.25);
+  width: 90%;
 
   &--site-notice {
     font-size: scale(.85);
@@ -17,7 +20,29 @@
     text-align: center;
   }
 
-  &__contents {
-    color: $c-silver;
+  &--site-notice,
+  &--is-nested {
+    max-width: none;
+    width: 100%;
+  }
+
+  a {
+    background: {
+      image: linear-gradient($c-midnight,$c-midnight);
+      position: 0 95%;
+      repeat: repeat-x;
+      size: 1px 1px;
+    }
+    color: shade($c-silver,10%);
+    text-shadow:
+      0 1px 1px $c-crimson,
+      1px 0 1px $c-crimson;
+
+    &:hover,&:focus {
+      color: $c-silver;
+    }
+    &:active {
+      color: shade($c-silver,20%);
+    }
   }
 }
