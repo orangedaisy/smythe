@@ -6,4 +6,19 @@
 
 .c-mystery-page__cart {
   margin: scale(1.5) auto;
+
+  .qty,
+  .amount {
+    margin-right: scale(1);
+  }
+
+  .qty {
+    margin-bottom: scale(1);
+  }
+
+  .amount {
+    display: inline-block;
+    font-weight: 700;
+    min-width: 50px;
+  }
 }

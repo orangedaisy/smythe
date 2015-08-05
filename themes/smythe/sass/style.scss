@@ -124,5 +124,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "components/c-note";
 @import "components/c-mystery-page";
 
+// utilities
+@import "utilities/utils";
+
 // woocommerce overrides
 @import "woocommerce";
