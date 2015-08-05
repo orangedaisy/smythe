@@ -17,7 +17,7 @@ $parent_product_post = $post;
 
 do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
-<form class="cart" method="post" enctype='multipart/form-data'>
+<form class="cart c-mystery-page__cart" method="post" enctype='multipart/form-data'>
 	<table cellspacing="0" class="group_table">
 		<tbody>
 			<?php
@@ -48,14 +48,6 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 							<?php endif; ?>
 						</td>
 
-						<td class="label">
-							<label for="product-<?php echo $product_id; ?>">
-								<?php echo $product->is_visible() ? '<a href="' . get_permalink() . '">' . get_the_title() . '</a>' : get_the_title(); ?>
-							</label>
-						</td>
-
-						<?php do_action ( 'woocommerce_grouped_product_list_before_price', $product ); ?>
-
 						<td class="price">
 							<?php
 								echo $product->get_price_html();
@@ -66,6 +58,14 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 								}
 							?>
 						</td>
+
+						<td class="label">
+							<label for="product-<?php echo $product_id; ?>">
+								<?php echo $product->is_visible() ? '<a href="' . get_permalink() . '">' . get_the_title() . '</a>' : get_the_title(); ?>
+							</label>
+						</td>
+
+						<?php do_action ( 'woocommerce_grouped_product_list_before_price', $product ); ?>
 					</tr>
 					<?php
 				endforeach;
@@ -84,7 +84,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
 		<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 
-		<button type="submit" class="single_add_to_cart_button button alt"><?php echo $product->single_add_to_cart_text(); ?></button>
+		<button type="submit" class="single_add_to_cart_button button alt c-button--gray"><?php echo $product->single_add_to_cart_text(); ?></button>
 
 		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 
