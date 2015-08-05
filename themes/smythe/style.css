@@ -289,6 +289,15 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   margin: 0; }
 
+.product_title {
+  color: #f0f0f0;
+  font-family: "Calligraffitti", cursive;
+  font-size: 5.063rem;
+  font-weight: 400;
+  padding: 5.063rem 0;
+  text-align: center;
+  text-shadow: 1px 0 1px rgba(48, 48, 48, 0.25), 0 1px 1px rgba(48, 48, 48, 0.25), 2px 1px 1px rgba(48, 48, 48, 0.25), 1px 2px 1px rgba(48, 48, 48, 0.25); }
+
 p {
   margin: 0; }
   p + p {

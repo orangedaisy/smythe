@@ -6,3 +6,21 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   margin: 0;
 }
+
+.product_title {
+  color: $c-silver;
+  font: {
+    family: $f-brand;
+    size: scale(5.063);
+    weight: 400;
+  }
+  padding: scale(5.063) 0;
+  text: {
+    align: center;
+    shadow:
+      1px 0 1px $c-shadow,
+      0 1px 1px $c-shadow,
+      2px 1px 1px $c-shadow,
+      1px 2px 1px $c-shadow;
+  }
+}

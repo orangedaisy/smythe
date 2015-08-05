@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <header class="c-page-header">
-  <h1 class="c-myster-page__title"><?php echo woocommerce_template_single_title(); ?></h1>
+  <?php echo woocommerce_template_single_title(); ?>
 </header>
 
 <div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class( 'o-paper c-letter' ); ?>>
