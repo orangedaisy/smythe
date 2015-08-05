@@ -42,7 +42,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
   <?php do_action( 'smythe_add_to_cart' ); ?>
 
-  <h2>Character List</h2>
   <?php the_content(); ?>
 
 	<meta itemprop="url" content="<?php the_permalink(); ?>" />
