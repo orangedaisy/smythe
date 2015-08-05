@@ -5,18 +5,22 @@
 // ----------
 
 // lord forgive me for this awful selector. i hate aggressive vendor styles.
-.woocommerce button.c-button--gray {
+.woocommerce button.c-button--gray,
+.woocommerce input.button {
   background: tint($c-midnight,20%);
   border-radius: 0;
+  box-shadow: 0 2px 4px $c-shadow;
   color: $c-silver;
 
   &:hover,&:focus {
     background: tint($c-midnight,30%);
+    box-shadow: 0 4px 8px $c-shadow;
     color: $c-silver;
   }
 
   &:active {
     background: $c-midnight;
+    box-shadow: 0 1px 2px $c-shadow;
     color: $c-silver;
   }
 }
