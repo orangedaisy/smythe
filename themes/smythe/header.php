@@ -21,7 +21,8 @@
   <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
   /* styles to show a nicely gradient-overlain background image in posts, etc */
-  .single-post .site-main {
+  .single-post .site-main,
+  .single-product .site-main {
     background:
       linear-gradient(
         to bottom,
