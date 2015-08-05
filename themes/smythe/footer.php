@@ -16,6 +16,11 @@
       <div class="site-nav__wrapper--left">
         <?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_id' => 'footer-menu' ) ); ?>
       </div>
+      <div class="site-nav__wrapper--right">
+        <ul>
+          <li><a href="http://www.orangedaisy.co" title="orange daisy" target="_blank">crafted by orange daisy</a></li>
+        </ul>
+      </div>
     </nav>
   </div><!-- .site-info -->
 </footer><!-- #colophon -->
