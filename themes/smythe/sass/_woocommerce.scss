@@ -8,3 +8,17 @@
 .woocommerce div.product p.cart {
   margin-bottom: scale(1.5);
 }
+
+.select2-choice {
+  background-image: none;
+}
+
+.woocommerce-checkout #payment .payment_method_paypal .about_paypal {
+  float: none;
+  line-height: 1.5;
+  font: {
+    size: scale(.85);
+    style: italic;
+  }
+  margin-left: scale(.5);
+}

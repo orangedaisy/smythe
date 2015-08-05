@@ -1015,4 +1015,14 @@ object {
 .woocommerce div.product p.cart {
   margin-bottom: 1.5rem; }
 
+.select2-choice {
+  background-image: none; }
+
+.woocommerce-checkout #payment .payment_method_paypal .about_paypal {
+  float: none;
+  line-height: 1.5;
+  font-size: 0.85rem;
+  font-style: italic;
+  margin-left: 0.5rem; }
+
 /*# sourceMappingURL=style.css.map */
