@@ -963,6 +963,10 @@ object {
     font-weight: 700;
     min-width: 50px; }
 
+.c-button--gray {
+  background: #303030;
+  color: #f0f0f0; }
+
 .u-row {
   display: block; }
 
