@@ -32,49 +32,36 @@ if ( ! $product->is_purchasable() ) {
 	<?php do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
 	<form class="cart c-mystery-page__cart" method="post" enctype='multipart/form-data'>
-    <table cellspacing="0" class="group_table">
-      <tbody>
+    <div class="u-row">
+      <?php
+        if ( ! $product->is_sold_individually() ) {
+          woocommerce_quantity_input( array(
+            'min_value'   => apply_filters( 'woocommerce_quantity_input_min', 1, $product ),
+            'max_value'   => apply_filters( 'woocommerce_quantity_input_max', $product->backorders_allowed() ? '' : $product->get_stock_quantity(), $product ),
+            'input_value' => ( isset( $_POST['quantity'] ) ? wc_stock_amount( $_POST['quantity'] ) : 1 )
+          ) );
+        }
+      ?>
 
-        <tr>
-          <td>
-            <?php
-              if ( ! $product->is_sold_individually() ) {
-                woocommerce_quantity_input( array(
-                  'min_value'   => apply_filters( 'woocommerce_quantity_input_min', 1, $product ),
-                  'max_value'   => apply_filters( 'woocommerce_quantity_input_max', $product->backorders_allowed() ? '' : $product->get_stock_quantity(), $product ),
-                  'input_value' => ( isset( $_POST['quantity'] ) ? wc_stock_amount( $_POST['quantity'] ) : 1 )
-                ) );
-              }
-            ?>
-          </td>
+      <?php
+        echo $product->get_price_html();
 
-          <td class="price">
-            <?php
-              echo $product->get_price_html();
+        if ( $availability = $product->get_availability() ) {
+          $availability_html = empty( $availability['availability'] ) ? '' : '<p class="stock ' . esc_attr( $availability['class'] ) . '">' . esc_html( $availability['availability'] ) . '</p>';
+          echo apply_filters( 'woocommerce_stock_html', $availability_html, $availability['availability'], $product );
+        }
+      ?>
 
-              if ( $availability = $product->get_availability() ) {
-                $availability_html = empty( $availability['availability'] ) ? '' : '<p class="stock ' . esc_attr( $availability['class'] ) . '">' . esc_html( $availability['availability'] ) . '</p>';
-                echo apply_filters( 'woocommerce_stock_html', $availability_html, $availability['availability'], $product );
-              }
-            ?>
-          </td>
-
-          <td class="label">
-            <label for="product-<?php echo $product_id; ?>">
-              <?php echo $product->is_visible() ? '<a href="' . get_permalink() . '">' . get_the_title() . '</a>' : get_the_title(); ?>
-            </label>
-          </td>
-        </tr>
-
-      </tbody>
-    </table>
+      <label for="product-<?php echo $product_id; ?>">
+        <?php echo $product->is_visible() ? '<a href="' . get_permalink() . '">' . get_the_title() . '</a>' : get_the_title(); ?>
+      </label>
+    </div>
 
     <input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
 
     <?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
     <button type="submit" class="single_add_to_cart_button button c-button--gray"><?php echo $product->single_add_to_cart_text(); ?></button>
     <?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
-
 	</form>
 
 	<?php do_action( 'woocommerce_after_add_to_cart_form' ); ?>
