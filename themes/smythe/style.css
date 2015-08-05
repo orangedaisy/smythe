@@ -937,6 +937,9 @@ object {
         color: #222222; }
   .c-postcard .entry-meta {
     font-style: italic; }
+  .c-postcard .price {
+    font-weight: 700;
+    margin-right: 0.5rem; }
 
 .c-note {
   background: #b12d2f;
