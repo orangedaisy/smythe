@@ -155,3 +155,9 @@ require get_template_directory() . '/inc/jetpack.php';
  */
 // display 24 products per page
 add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 24;' ), 20 );
+
+// only show grouped product parents on shop page
+add_action( 'woocommerce_product_query', 'so_27975262_product_query' );
+function so_27975262_product_query( $q ){
+  $q->set( 'post_parent', 0 );
+}
