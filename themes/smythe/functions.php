@@ -44,6 +44,7 @@ function smythe_setup() {
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'smythe' ),
     'secondary' => esc_html__( 'Secondary Menu', 'smythe' ),
+    'footer' => esc_html__( 'Footer Menu', 'smythe' ),
 	) );
 
 	/*
