@@ -5,7 +5,7 @@
 // ----------
 
 .c-mystery-page__cart {
-  margin: scale(1.5) auto;
+  margin: 0 !important;
 
   .qty,
   .amount {
@@ -13,12 +13,31 @@
   }
 
   .qty {
+    background: $c-silver;
+    border: 1px solid shade($c-crimson,20%);
+    color: $c-midnight;
     margin-bottom: scale(1);
   }
 
   .amount {
     display: inline-block;
-    font-weight: 700;
     min-width: 50px;
+  }
+}
+
+.woocommerce button.button.button--white {
+  background: $c-silver;
+  border-radius: 0;
+  box-shadow: 0 2px 4px $c-shadow;
+  color: $c-midnight;
+
+  &:hover,&:focus {
+    background: shade($c-silver,10%);
+    box-shadow: 0 4px 8px $c-shadow;
+  }
+
+  &:active {
+    box-shadow: 0 1px 2px $c-shadow;
+    color: tint($c-midnight,10%);
   }
 }

@@ -17,76 +17,78 @@ $parent_product_post = $post;
 
 do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
-<form class="cart c-mystery-page__cart" method="post" enctype='multipart/form-data'>
-  <?php
-    foreach ( $grouped_products as $product_id ) :
-      $product = wc_get_product( $product_id );
+<div class="c-note is-nested has-form">
+  <form class="cart c-mystery-page__cart" method="post" enctype='multipart/form-data'>
+    <?php
+      foreach ( $grouped_products as $product_id ) :
+        $product = wc_get_product( $product_id );
 
-      if ( 'yes' === get_option( 'woocommerce_hide_out_of_stock_items' ) && ! $product->is_in_stock() ) {
-        continue;
-      }
+        if ( 'yes' === get_option( 'woocommerce_hide_out_of_stock_items' ) && ! $product->is_in_stock() ) {
+          continue;
+        }
 
-      $post    = $product->post;
-      setup_postdata( $post );
-      ?>
-
-      <div class="u-row">
-
-        <?php if ( $product->is_sold_individually() || ! $product->is_purchasable() ) : ?>
-          <?php woocommerce_template_loop_add_to_cart(); ?>
-        <?php else : ?>
-          <?php
-            $quantites_required = true;
-            woocommerce_quantity_input( array(
-              'input_name'  => 'quantity[' . $product_id . ']',
-              'input_value' => ( isset( $_POST['quantity'][$product_id] ) ? wc_stock_amount( $_POST['quantity'][$product_id] ) : 0 ),
-              'min_value'   => apply_filters( 'woocommerce_quantity_input_min', 0, $product ),
-              'max_value'   => apply_filters( 'woocommerce_quantity_input_max', $product->backorders_allowed() ? '' : $product->get_stock_quantity(), $product )
-            ) );
-          ?>
-        <?php endif; ?>
-
-        <?php do_action ( 'woocommerce_grouped_product_list_before_price', $product ); ?>
-
-        <?php
-          echo $product->get_price_html();
-
-          if ( $availability = $product->get_availability() ) {
-            $availability_html = empty( $availability['availability'] ) ? '' : '<p class="stock ' . esc_attr( $availability['class'] ) . '">' . esc_html( $availability['availability'] ) . '</p>';
-            echo apply_filters( 'woocommerce_stock_html', $availability_html, $availability['availability'], $product );
-          }
+        $post    = $product->post;
+        setup_postdata( $post );
         ?>
 
-        <label for="product-<?php echo $product_id; ?>">
-          <?php echo $product->is_visible() ? '<a href="' . get_permalink() . '">' . get_the_title() . '</a>' : get_the_title(); ?>
-        </label>
+        <div class="u-row">
 
-      </div>
+          <?php if ( $product->is_sold_individually() || ! $product->is_purchasable() ) : ?>
+            <?php woocommerce_template_loop_add_to_cart(); ?>
+          <?php else : ?>
+            <?php
+              $quantites_required = true;
+              woocommerce_quantity_input( array(
+                'input_name'  => 'quantity[' . $product_id . ']',
+                'input_value' => ( isset( $_POST['quantity'][$product_id] ) ? wc_stock_amount( $_POST['quantity'][$product_id] ) : 0 ),
+                'min_value'   => apply_filters( 'woocommerce_quantity_input_min', 0, $product ),
+                'max_value'   => apply_filters( 'woocommerce_quantity_input_max', $product->backorders_allowed() ? '' : $product->get_stock_quantity(), $product )
+              ) );
+            ?>
+          <?php endif; ?>
 
-      <?php
-    endforeach;
+          <?php do_action ( 'woocommerce_grouped_product_list_before_price', $product ); ?>
 
-    // Reset to parent grouped product
-    $post    = $parent_product_post;
-    $product = wc_get_product( $parent_product_post->ID );
-    setup_postdata( $parent_product_post );
-  ?>
+          <?php
+            echo $product->get_price_html();
 
-  <div class="u-row">
+            if ( $availability = $product->get_availability() ) {
+              $availability_html = empty( $availability['availability'] ) ? '' : '<p class="stock ' . esc_attr( $availability['class'] ) . '">' . esc_html( $availability['availability'] ) . '</p>';
+              echo apply_filters( 'woocommerce_stock_html', $availability_html, $availability['availability'], $product );
+            }
+          ?>
 
-    <input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
+          <label for="product-<?php echo $product_id; ?>">
+            <?php echo $product->is_visible() ? '<a href="' . get_permalink() . '">' . get_the_title() . '</a>' : get_the_title(); ?>
+          </label>
 
-    <?php if ( $quantites_required ) : ?>
+        </div>
 
-      <?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
+        <?php
+      endforeach;
 
-      <button type="submit" class="single_add_to_cart_button button c-button--gray"><?php echo $product->single_add_to_cart_text(); ?></button>
+      // Reset to parent grouped product
+      $post    = $parent_product_post;
+      $product = wc_get_product( $parent_product_post->ID );
+      setup_postdata( $parent_product_post );
+    ?>
 
-      <?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
+    <div class="u-row">
 
-    <?php endif; ?>
+      <input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
 
-  </div>
-</form>
+      <?php if ( $quantites_required ) : ?>
+
+        <?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
+
+        <button type="submit" class="single_add_to_cart_button button button--white"><?php echo $product->single_add_to_cart_text(); ?></button>
+
+        <?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
+
+      <?php endif; ?>
+
+    </div>
+  </form>
+</div>
 
 <?php do_action( 'woocommerce_after_add_to_cart_form' ); ?>

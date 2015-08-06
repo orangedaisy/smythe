@@ -21,9 +21,13 @@
   }
 
   &--site-notice,
-  &--is-nested {
+  &.is-nested {
     max-width: none;
     width: 100%;
+  }
+
+  &.has-form {
+    margin: 1.5rem auto;
   }
 
   a {
