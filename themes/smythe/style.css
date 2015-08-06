@@ -911,7 +911,7 @@ object {
 .c-postcard {
   background-position: center left;
   background-repeat: no-repeat;
-  background-size: 75% auto;
+  background-size: contain;
   margin: 0 auto;
   max-width: 67.5em;
   width: 90%; }
