@@ -180,3 +180,6 @@ function smythe_change_breadcrumb_home_text( $defaults ) {
 }
 
 add_action( 'smythe_breadcrumbs', 'woocommerce_breadcrumb' );
+
+// something about the sku shit?
+add_filter( 'wc_product_sku_enabled', '__return_false' );
