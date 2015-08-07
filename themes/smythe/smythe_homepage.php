@@ -11,7 +11,7 @@ get_header(); ?>
 
   <main id="main" class="site-main hfeed" role="main">
 
-    <div class="u-row" style="marign:0 auto;max-width:67.5em;width:90%;">
+    <div class="u-row" style="margin:0 auto;max-width:67.5em;width:90%;">
 
       <div class="u-two-thirds">
         <?php
