@@ -11,11 +11,23 @@ get_header(); ?>
 
   <main id="main" class="site-main hfeed" role="main">
 
-    <?php while ( have_posts() ) : the_post(); ?>
+    <div class="u-row" style="marign:0 auto;max-width:67.5em;width:90%;">
 
-      <?php get_template_part( 'template-parts/content', 'page' ); ?>
+      <div class="u-two-thirds">
+        <?php
+          echo do_shortcode("[medaslider id=114]");
+        ?>
+      </div>
 
-    <?php endwhile; // End of the loop. ?>
+      <div class="u-one-third">
+        <?php while ( have_posts() ) : the_post(); ?>
+
+          <?php get_template_part( 'template-parts/content', 'page' ); ?>
+
+        <?php endwhile; // End of the loop. ?>
+      </div>
+
+    </div>
 
   </main><!-- #main -->
 
