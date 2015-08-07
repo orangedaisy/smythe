@@ -15,7 +15,7 @@ get_header(); ?>
 
       <div class="u-two-thirds">
         <?php
-          echo do_shortcode("[medaslider id=114]");
+          echo do_shortcode("[metaslider id=114]");
         ?>
       </div>
 
