@@ -12,3 +12,11 @@
 .u-half {
   @include column(1/2);
 }
+
+.u-two-thirds {
+  @include column(2/3);
+}
+
+.u-one-third {
+  @include column(1/3);
+}
