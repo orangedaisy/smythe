@@ -8,3 +8,7 @@
   @extend %clearfix;
   display: block;
 }
+
+.u-half {
+  @include column(1/2);
+}
