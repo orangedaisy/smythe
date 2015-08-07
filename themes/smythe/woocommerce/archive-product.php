@@ -17,10 +17,6 @@ get_header( 'shop' ); ?>
 
 <main id="main" class="site-main" role="main">
 
-  <div class="o-paper c-note" style="margin-bottom:2.25rem;">
-    <p>All of Cordelia Smythe's mysteries come complete with no additional printing or assembly required. <a href="/mystery-contents" title="Mystery Contents">Read more</a>.</p>
-  </div>
-
 	<?php
 		/**
 		 * woocommerce_before_main_content hook

@@ -37,6 +37,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
   <?php do_action( 'smythe_breadcrumbs' ); ?>
 
+  <h4>All of Cordelia Smythe's mysteries come complete with no additional printing or assembly required. <a href="/mystery-contents" title="Mystery Contents">Read more</a>.</h4>
+
   <h2 style="margin-top:0;">Mystery Overview</h2>
   <?php the_excerpt(); ?>
 
