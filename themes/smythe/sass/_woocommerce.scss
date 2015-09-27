@@ -22,3 +22,17 @@
   }
   margin-left: scale(.5);
 }
+
+.woocommerce .woocommerce-message,
+.woocommerce .woocommerce-info,
+.woocommerce .woocommerce-error {
+  margin: 0 auto !important; //seriously?! come on, woocommerce.
+  max-width: 67.5em;
+  width: 90%;
+
+  .c-letter & {
+    box-shadow: 0 2px 4px $c-shadow;
+    margin: 0 0 1.5rem !important;
+    width: 100%;
+  }
+}
