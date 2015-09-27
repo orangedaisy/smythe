@@ -9,4 +9,8 @@
   max-width: 67.5em;
   padding: scale(2.25);
   width: 90%;
+  
+  .u-one-third & {
+    width: 100%;
+  }
 }
