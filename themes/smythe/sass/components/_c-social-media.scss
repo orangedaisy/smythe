@@ -1,0 +1,25 @@
+// ----------
+//
+// social media
+//
+// styles for the social media icons
+//
+// ----------
+
+.social-media {
+
+  a {
+    background: none;
+    display: inline-block;
+
+    & + a {
+      margin-left: .5rem;
+    }
+  }
+
+  img {
+    height: 24px;
+    vertical-align: baseline;
+    width: auto;
+  }
+}
