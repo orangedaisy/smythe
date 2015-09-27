@@ -11,7 +11,20 @@
 
 <footer id="colophon" class="site-footer" role="contentinfo">
   <div class="site-info">
-    <p>&copy;<?php echo date('Y'); ?> Cordelia Smythe Murder Mysteries</p>
+    <p class="clear">
+      &copy;<?php echo date('Y'); ?> Cordelia Smythe Murder Mysteries
+      <span class="social-media alignright">
+        <a title="Cordelia Smythe Facebook" href="#">
+          <img alt="facebook" src="/wp-content/themes/smythe/img/facebook.png">
+        </a>
+        <a title="Cordelia Smythe Pinterest" href="#">
+          <img alt="pinterest" src="/wp-content/themes/smythe/img/pinterest.png">
+        </a>
+        <a title="Cordelia Smythe Twitter" href="#">
+          <img alt="twitter" src="/wp-content/themes/smythe/img/twitter.png">
+        </a>
+      </span>
+    </p>
     <nav class="site-nav" role="navigation">
       <div class="site-nav__wrapper--left">
         <?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_id' => 'footer-menu' ) ); ?>
