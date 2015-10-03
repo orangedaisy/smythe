@@ -5,5 +5,8 @@
 // ----------
 
 .site-main {
-  padding-top: scale(2.25);
+  padding: {
+    top: scale(2.25);
+    bottom: scale(2.25);
+  }
 }
