@@ -5,7 +5,21 @@
 // ----------
 
 .site-header {
-  background: $c-midnight;
+  background: {
+    image:
+      linear-gradient(
+        to bottom,
+        transparent,
+        rgba(12,12,12,.5) 15%,
+        rgba(12,12,12,.7) 50%,
+        rgba(12,12,12,.5) 85%,
+        transparent
+      ),
+      url(/wp-content/themes/smythe/img/banner.jpg);
+    position: -10% center;
+    repeat: no-repeat;
+    size: cover;
+  }
 }
 
 .wordmark {
