@@ -22,7 +22,7 @@ get_header(); ?>
             <img src="<?php the_field('image'); ?>" alt="" class="c-telegram__pic">
           </div>
 
-          <div class="u-two-thrids">
+          <div class="u-two-thirds">
             <h2 class="c-telegram__title">
               <?php echo get_the_title(); ?>
             </h2>
