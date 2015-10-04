@@ -14,13 +14,13 @@
     <p class="clear">
       &copy;<?php echo date('Y'); ?> Cordelia Smythe Murder Mysteries
       <span class="social-media alignright">
-        <a title="Cordelia Smythe Facebook" href="#">
+        <a title="Cordelia Smythe Facebook" href="https://www.facebook.com/CordeliaSmytheMysteries">
           <img alt="facebook" src="/wp-content/themes/smythe/img/facebook.png">
         </a>
-        <a title="Cordelia Smythe Pinterest" href="#">
+        <a title="Cordelia Smythe Pinterest" href="https://www.pinterest.com/cordeliamystery">
           <img alt="pinterest" src="/wp-content/themes/smythe/img/pinterest.png">
         </a>
-        <a title="Cordelia Smythe Twitter" href="#">
+        <a title="Cordelia Smythe Twitter" href="https://www.twitter.com/CSmytheMystery">
           <img alt="twitter" src="/wp-content/themes/smythe/img/twitter.png">
         </a>
       </span>
