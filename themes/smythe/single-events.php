@@ -26,13 +26,20 @@ get_header(); ?>
             <h2 class="c-telegram__title">
               <?php echo get_the_title(); ?>
             </h2>
-            <p class="c-telegram__date"><?php the_field('event_date'); ?></p>
+            <p class="c-telegram__date">
+              <?php
+                $date = DateTime::createFromFormat('Ymd', get_field('event_date'));
+                echo $date->format('F j, Y');
+              ?>
+            </p>
             <p class="c-telegram__venue">
               <a href="<?php the_field('venue_website'); ?>" class="c-link">
                 <?php the_field('venue_name'); ?>
               </a>
             </p>
-            <?php the_content(); ?>
+            <div class="c-telegram__description">
+              <?php the_content(); ?>
+            </div>
           </div>
         </div>
       </article>
