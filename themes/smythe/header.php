@@ -36,6 +36,62 @@
   }
 </style>
 
+<!-- mailchimp styles -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+  #mc_embed_signup {
+    background: #f0f0f0;
+    box-shadow: 0 2px 4px $c-shadow;
+    display: block;
+    margin: 0 auto 2.25rem;
+    max-width: 67.5em;
+    padding: 2.25rem;
+    width: 90%;
+  }
+
+  #mc_embed_signup form {
+    padding: 0;
+  }
+
+  #mc_embed_signup_scroll p {
+    font-style: italic;
+    text-align: center;
+  }
+
+  #mc_embed_signup_scroll h2 {
+    margin: .5rem auto;
+    text-align: center;
+  }
+
+  #mc_embed_signup .mc-field-group {
+    height: auto;
+    margin-bottom: 1rem;
+    min-height: none;
+    padding-bottom: 0;
+    width: 100%;
+  }
+
+  #mc_embed_signup .button {
+    background: #595959;
+    border-radius: 0;
+    box-shadow: 0 2px 4px rgba(48,48,48,.25);
+    color: #f0f0f0;
+    font-size: 1rem;
+    margin: 0;
+    text-shadow: none;
+  }
+
+  #mc_embed_signup .button:hover,
+  #mc_embed_signup .button:focus {
+    box-shadow: 0 4px 8px rgba(48,48,48,.25);
+  }
+
+  #mc_embed_signup .button:active {
+    background: #303030;
+    box-shadow: 0 1px 2px rgba(48,48,48,.5);
+  }
+</style>
+
 <?php wp_head(); ?>
 </head>
 
